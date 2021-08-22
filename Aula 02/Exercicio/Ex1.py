@@ -10,12 +10,10 @@ def sortFile(file):
     content.sort()
     return content
 def main():
-    file = open("times.txt", encoding="utf-8")
+    file = open("times.txt","r",encoding="utf-8")
     sorted = sortFile(file)
     print("Times:")
     for words in sorted:
         print(words, end = "")
-    
     file.close()
-
 main()
