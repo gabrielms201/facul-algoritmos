@@ -1,13 +1,15 @@
 import random
 import time
 import matplotlib.pyplot as plt
+import numpy as np
+
 # > gere dados aleatórios (10, 100, 500, 1000, 5000, 10000) e salve-os em arquivos.
 # > abra os arquivos, leia-os, carregue os valores em listas e ordene-as com os algoritmos bubble, insertion e selection.
 # > realize a aferição temporal de cada ordenação.
 # > plote os gráficos pertinentes para comparação dos tempos de execução.
 
 
-
+# > Lists:
 class listMethods():
     def bubbleSort(aList):
         lastIndex = len(aList)-1
@@ -40,38 +42,68 @@ class listService():
             file.write(str(random.randint(0,10000)))
             file.write("\n")
         file.close()
-    def generateList(fileName):
-        file = open(f"{fileName}.txt", "r+", encoding = "UTF-8")
-        aList = []
-        for line in file:
-            aList.append(int(line.rstrip()))
-        file.close()
-        return aList
+    def generateLists(fileName):
+        lists = []
+        for i in range(3):
+            file = open(f"{fileName}.txt", "r+", encoding = "UTF-8")
+            aList = []
+            for line in file:
+                aList.append(int(line.rstrip()))
+            lists.append(aList)
+            file.close()
+        return lists
+# > Time:
 def generateTime(shouldBubble = False, shouldSelect = False, shouldInsert = True):
-    #listService.generateFile(""numbers"")
-    lists = []
-    for i in range(3):
-        lists.append(listService.generateList("numbers"))
+    lists = listService.generateLists("numbers")
     times = []
     # Bubble Conditional
     if shouldBubble:
+        print("Ordenando por Bubble... Aguarde")
         tempoInicioBubble = time.time()
-        bubble = listMethods.bubbleSort(lists[0])
+        listMethods.bubbleSort(lists[0])
         tempoBubble = time.time() - tempoInicioBubble
         times.append(tempoBubble)
-    # Bubble 
+    # Select Conditional 
     if shouldSelect:
+        print("Ordenando por Select... Aguarde")
         tempoInicioSelect = time.time()
-        select = listMethods.selectionSort(lists[1])
+        listMethods.selectionSort(lists[1])
         tempoSelect = time.time() - tempoInicioSelect
         times.append(tempoSelect)
-
+    # Insert Conditional
     if shouldInsert:
+        print("Ordenando por Insert... Aguarde")
         tempoInicioInsert = time.time()
-        insert = listMethods.insertionSort(lists[2])
+        listMethods.insertionSort(lists[2])
         tempoInsert = time.time() - tempoInicioInsert
         times.append(tempoInsert)
     
-times = generateTime(True, True, True)
+    return times
+# > Graphics:
+def generateGraphic(times):
+    # > Values
+    sorts = ["BubbleSort", "SelectionSort", "InsertionSort"]
+    x = np.arange(len(sorts))
 
+    # > Graphic Plot
+    plt.xticks(x, sorts)
+    plt.bar(x, times, width=0.7, label="Tempo", color = "red")
+    plt.ylabel("Tempo(s)")
+    plt.xlabel("Algoritmo")
+    plt.title("Métodos de Ordernar Lista")
+    plt.legend()
 
+    plt.show()
+
+def main():
+    generate = input("Deseja gerar o arquivo de texto? S/N ").upper()
+    listService.generateFile("numbers") if generate == "S" else None
+    times = generateTime(True, True, True)
+
+    print(f"-> Bubble: {times[0]}")
+    print(f"-> Selection: {times[1]}")
+    print(f"-> Insertion: {times[2]}")
+    
+    generateGraphic(times)
+
+main()
