@@ -36,9 +36,9 @@ class listMethods():
                 aList[j+1] = nextElement
         return aList
 class listService():
-    def generateFile(fileName):
+    def generateFile(fileName, number = 10000):
         file = open(f"{fileName}.txt", "w+", encoding = "UTF-8")
-        for i in range(10000):
+        for i in range(number):
             file.write(str(random.randint(0,10000)))
             file.write("\n")
         file.close()
@@ -53,30 +53,30 @@ class listService():
             file.close()
         return lists
 # > Time:
-def generateTime(shouldBubble = False, shouldSelect = False, shouldInsert = True):
+def generateTime(shouldBubble = True, shouldSelect = True, shouldInsert = True):
     lists = listService.generateLists("numbers")
     times = []
     # Bubble Conditional
     if shouldBubble:
         print("Ordenando por Bubble... Aguarde")
-        tempoInicioBubble = time.time()
+        start = time.time()
         listMethods.bubbleSort(lists[0])
-        tempoBubble = time.time() - tempoInicioBubble
-        times.append(tempoBubble)
-    # Select Conditional 
+        bubbleTime = time.time() - start
+        times.append(bubbleTime)
+    # Select Conditional
     if shouldSelect:
         print("Ordenando por Select... Aguarde")
-        tempoInicioSelect = time.time()
+        start = time.time()
         listMethods.selectionSort(lists[1])
-        tempoSelect = time.time() - tempoInicioSelect
-        times.append(tempoSelect)
+        selectTime = time.time() - start
+        times.append(selectTime)
     # Insert Conditional
     if shouldInsert:
         print("Ordenando por Insert... Aguarde")
-        tempoInicioInsert = time.time()
+        start = time.time()
         listMethods.insertionSort(lists[2])
-        tempoInsert = time.time() - tempoInicioInsert
-        times.append(tempoInsert)
+        insertTime = time.time() - start
+        times.append(insertTime)
     
     return times
 # > Graphics:
@@ -97,9 +97,9 @@ def generateGraphic(times):
 
 def main():
     generate = input("Deseja gerar o arquivo de texto? S/N ").upper()
-    listService.generateFile("numbers") if generate == "S" else None
+    listService.generateFile(f"numbers") if generate == "S" else None
     times = generateTime(True, True, True)
-
+    
     print(f"-> Bubble: {times[0]}")
     print(f"-> Selection: {times[1]}")
     print(f"-> Insertion: {times[2]}")
