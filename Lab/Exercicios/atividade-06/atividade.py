@@ -45,16 +45,17 @@ def primeiro():
     print(f"e-) {e(n)}")
     print(f"f-) {f(n)}")
 
-def segundo():
-    valor = int(input("Digite o seu número em decimal: "))
-    resto = valor % 2
-    quociente = valor // 2
+def segundo(valorDecimal, base):
+    resto = valorDecimal % base
+    quociente = valorDecimal // base
     destino = ""
     while quociente != 0:
-        resto = valor % 2
+        resto = valorDecimal % base
         destino += str(resto)
-        quociente = valor // 2
-        valor = quociente
-    print(destino[::-1])
+        quociente = valorDecimal // base
+        valorDecimal = quociente
+    return destino[::-1]
 primeiro()
-print(segundo())
+valorDecimal = int(input("Digite o seu número em decimal: "))
+base = int(input("Digite a base: "))
+print( segundo(valorDecimal, base) ) 
