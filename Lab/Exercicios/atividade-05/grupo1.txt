@@ -1,0 +1,100 @@
+Miguel	;	0,23234221	;	25
+Arthur	;	0,420736921	;	92
+Bernardo	;	0,75592975	;	66
+Heitor	;	0,580917754	;	13
+Davi	;	0,612122893	;	72
+Lorenzo	;	0,422124144	;	54
+Théo	;	0,092012861	;	42
+Pedro	;	0,880063213	;	86
+Gabriel	;	0,698895694	;	11
+Enzo	;	0,59335177	;	46
+Matheus	;	0,45585592	;	25
+Lucas	;	0,401771195	;	54
+Benjamin	;	0,78312819	;	22
+Nicolas	;	0,621269178	;	84
+Guilherme	;	0,157235851	;	82
+Rafael	;	0,748926653	;	96
+Joaquim	;	0,355125852	;	89
+Samuel	;	0,628307615	;	78
+Enzo Gabriel	;	0,353100496	;	14
+João Miguel	;	0,04879092	;	35
+Henrique	;	0,130944299	;	48
+Gustavo	;	0,466075542	;	88
+Murilo	;	0,411485175	;	94
+Pedro Henrique	;	0,444762921	;	86
+Pietro	;	0,995029319	;	12
+Lucca	;	0,431344629	;	15
+Felipe	;	0,936749733	;	48
+João Pedro	;	0,853550797	;	64
+Isaac	;	0,086028054	;	99
+Benício	;	0,103138549	;	58
+Daniel	;	0,888283558	;	17
+Anthony	;	0,497438027	;	63
+Leonardo	;	0,128762178	;	70
+Davi Lucca	;	0,957439304	;	81
+Bryan	;	0,939089379	;	57
+Eduardo	;	0,509835777	;	25
+João Lucas	;	0,100493532	;	66
+Victor	;	0,713159126	;	93
+João	;	0,826375587	;	58
+Cauã	;	0,219625134	;	72
+Antônio	;	0,738121466	;	72
+Vicente	;	0,041493198	;	84
+Caleb	;	0,144104089	;	57
+Gael	;	0,204586466	;	45
+Bento	;	0,121029842	;	80
+Caio	;	0,5174287	;	17
+Emanuel	;	0,609372295	;	39
+Vinícius	;	0,80376188	;	57
+João Guilherme	;	0,803980811	;	42
+Davi Lucas	;	0,561216685	;	56
+Noah	;	0,164763165	;	98
+João Gabriel	;	0,855269352	;	17
+João Victor	;	0,665420294	;	22
+Luiz Miguel	;	0,488812171	;	10
+Francisco	;	0,534720257	;	4
+Kaique	;	0,522743149	;	30
+Otávio	;	0,110505273	;	74
+Augusto	;	0,845419354	;	1
+Levi	;	0,910698612	;	77
+Yuri	;	0,079622128	;	27
+Enrico	;	0,465233744	;	80
+Thiago	;	0,873424586	;	93
+Ian	;	0,269011267	;	81
+Victor Hugo	;	0,481965238	;	36
+Thomas	;	0,340016316	;	30
+Henry	;	0,787289084	;	12
+Luiz Felipe	;	0,123028895	;	50
+Ryan	;	0,356839864	;	87
+Arthur Miguel	;	0,190165299	;	55
+Davi Luiz	;	0,437724211	;	81
+Nathan	;	0,23612844	;	47
+Pedro Lucas	;	0,875224902	;	37
+Davi Miguel	;	0,486102261	;	65
+Raul	;	0,672251011	;	37
+Pedro Miguel	;	0,333767624	;	55
+Luiz Henrique	;	0,562677522	;	22
+Luan	;	0,700263425	;	75
+Erick	;	0,1490048	;	56
+Martin	;	0,074944202	;	69
+Bruno	;	0,113426404	;	34
+Rodrigo	;	0,591394764	;	40
+Luiz Gustavo	;	0,450618891	;	47
+Arthur Gabriel	;	0,486895366	;	16
+Breno	;	0,37115836	;	87
+Kauê	;	0,029062318	;	36
+Enzo Miguel	;	0,75497474	;	86
+Fernando	;	0,969748989	;	22
+Arthur Henrique	;	0,223320716	;	59
+Luiz Otávio	;	0,883396103	;	82
+Carlos Eduardo	;	0,221780092	;	48
+Tomás	;	0,142971988	;	40
+Lucas Gabriel	;	0,14136871	;	66
+André	;	0,266493221	;	43
+José	;	0,102443613	;	63
+Yago	;	0,191064912	;	96
+Danilo	;	0,591605682	;	24
+Anthony Gabriel	;	0,91006856	;	12
+Ruan	;	0,312737202	;	26
+Miguel Henrique	;	0,500323922	;	39
+Oliver	;	0,829265777	;	28
