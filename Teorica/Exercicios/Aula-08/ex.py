@@ -37,15 +37,23 @@ def ex2():
         multiplier = 5
         for i in range(9):
             aList = np.arange(0, value)
+            aList = np.ndarray.tolist(aList)
             value = value * multiplier
             multiplier = 2 if multiplier == 5 else 5
             lists.append(aList)
         return lists
+    def getComparsions(lists):
+        comparsions = []
+        for list in lists: 
+            result = linearSearch(list, 9999999999)
+            comparsions.append(result[1])
+        return comparsions
+    def generateGraphic(x, y):
+        plt.scatter(x,y)
+        plt.plot(x,y)
+        plt.show()
     lists = generateLists()
-    comparsions = []
-    for list in lists: 
-        result = linearSearch(list, 9999999999)
-        comparsions.append(result[1])
+    comparsions = getComparsions(lists)
+    generateGraphic(comparsions, [len(lista) for lista in lists])
     print(comparsions)
-    
 ex2()
