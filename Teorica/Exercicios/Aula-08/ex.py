@@ -11,5 +11,6 @@ def ex1():
         if find: return lastIndex
         return -1
     lista = [1,2,3,4,4,6]
-    print(linearSearchLast(lista, 4))
+    ultimaOcorrencia = linearSearchLast(lista, 4)
+    print(f"Última ocorrência: {ultimaOcorrencia}")
 ex1()
