@@ -52,6 +52,8 @@ def searchName(group, name, atributeAsString, showSortedGroup = False):
         printGroup(group)
     return binarySearch(group, name, atributeAsString)
 
+
+
 def main():
     groupOne = createGroup("grupo1.txt")
     groupTwo = createGroup("grupo2.txt")
